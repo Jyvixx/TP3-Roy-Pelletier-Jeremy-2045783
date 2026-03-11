@@ -1,17 +1,33 @@
-*{ box-sizing: border-box;}
+* {
+	box-sizing: border-box;
+}
+
+/* Fonts
+========================================================================== */
+
+
+/* FONT: Great Vibes */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 
 /* Typographies / Couleurs (exemples : titres, paragraphes, liens, etc.)
 ========================================================================== */
 
-body{
-	background-color: aliceblue;
+body {
+	background-color: #EAE7D7;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+header,
+h1,
+h2 {
+	font-family: "Great Vibes", cursive;
 }
 
 /* Mise en page (positionnement)
 ========================================================================== */
 
-.container{
+.container {
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -21,6 +37,87 @@ body{
 /* Header / Navigations / Footer 
 ========================================================================== */
 
+/* header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+	background-color: #414E8D;
+	height: 4rem;
+}
+
+.logo {
+	height: 60px;
+	border: 2px solid red;
+}
+
+header nav {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+header nav a {
+	color: #DFAE65;
+	text-decoration: none;
+	margin-left: 2rem;
+}
+
+header nav a:hover {
+	color: #D1725B;
+}
+
+.flex-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} */
+
+
+header {
+	color: white;
+	background-color: #414E8D;
+	padding: 1rem 2rem;
+}
+
+.logo {
+	height: 100%;
+	width: auto;
+	display: block;
+}
+
+header nav a {
+	color: #DFAE65;
+	text-decoration: underline;
+	text-decoration-color: #D1725B;
+	margin-left: 3rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+
+header nav a:hover {
+	color: #D1725B;
+}
+
+.flex-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a:last-child {
+	background-color: #72585E;
+	padding: 0.5rem;
+}
+
+nav a:last-child:hover {
+	color: white;
+}
+
+.currentpage {
+	text-decoration: none;
+}
 
 
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
