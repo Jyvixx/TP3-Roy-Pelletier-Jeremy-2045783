@@ -77,6 +77,7 @@ nav a:last-child {
 
 nav a:last-child:hover {
 	color: white;
+	box-shadow: 0.3rem 0.4rem #35292c6e;
 }
 
 .currentpage {
@@ -105,7 +106,49 @@ nav a:last-child:hover {
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
 
+/* Page d'accueil */
 
+.section-top-group {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section-top-content {
+	width: 35%;
+}
+
+.section-top-img {
+	width: 60%;
+	margin: 4rem 0 4rem 0;
+}
+
+.button-order {
+	text-decoration: none;
+	color: #DFAE65;
+	background-color: #72585E;
+	padding: 0.5rem;
+	border-radius: 1.5rem;
+}
+
+.button-order:hover {
+	color: white;
+	box-shadow: 0.2rem 0.2rem #35292c6e;
+}
+
+.button-booking {
+	text-decoration: none;
+	color: #DFAE65;
+	background-color: #414E8D;
+	padding: 0.5rem;
+	border-radius: 1.5rem;
+	margin-left: 2rem;
+}
+
+.button-booking:hover {
+	color: white;
+	box-shadow: 0.2rem 0.2rem #232a4d63;
+}
 
 /* Formulaires
 ========================================================================== */
