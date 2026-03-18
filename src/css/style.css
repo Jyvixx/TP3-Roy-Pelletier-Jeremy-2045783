@@ -37,43 +37,6 @@ h2 {
 /* Header / Navigations / Footer 
 ========================================================================== */
 
-/* header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	color: white;
-	background-color: #414E8D;
-	height: 4rem;
-}
-
-.logo {
-	height: 60px;
-	border: 2px solid red;
-}
-
-header nav {
-	display: flex;
-	flex-wrap: nowrap;
-	align-items: center;
-}
-
-header nav a {
-	color: #DFAE65;
-	text-decoration: none;
-	margin-left: 2rem;
-}
-
-header nav a:hover {
-	color: #D1725B;
-}
-
-.flex-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-} */
-
-
 header {
 	color: white;
 	background-color: #414E8D;
@@ -109,6 +72,7 @@ header nav a:hover {
 nav a:last-child {
 	background-color: #72585E;
 	padding: 0.5rem;
+	border-radius: 1.5rem;
 }
 
 nav a:last-child:hover {
@@ -119,6 +83,24 @@ nav a:last-child:hover {
 	text-decoration: none;
 }
 
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-bottom: 0.5rem;
+}
+
+.footer-bottom {
+	display: flex;
+	justify-content: space-between;
+	text-decoration: underline;
+	padding-top: 0.5rem;
+}
+
+.footer-bottom-right {
+	display: flex;
+	gap: 1.5rem;
+}
 
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
