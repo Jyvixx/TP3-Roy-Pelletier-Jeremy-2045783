@@ -107,6 +107,12 @@ nav a:last-child:hover {
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
 
+/* Général */
+
+h1 {
+	margin-bottom: 3rem;
+}
+
 /* Page d'accueil */
 
 .section-top-group {
@@ -122,6 +128,10 @@ nav a:last-child:hover {
 .section-top-img {
 	width: 60%;
 	margin: 4rem 0 4rem 0;
+}
+
+.section-top-button {
+	margin-top: 2rem;
 }
 
 .button-order {
@@ -155,7 +165,6 @@ nav a:last-child:hover {
 	display: flex;
 	flex-wrap: wrap;
 	height: auto;
-	/* max-height: 16rem; */
 	width: 32%;
 	border-radius: 1.5rem;
 	padding: 0.5rem;
@@ -193,6 +202,45 @@ nav a:last-child:hover {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	gap: 1rem;
+}
+
+/* Page restaurant */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 23% 23% 23% 23%;
+	gap: 1rem;
+	margin-bottom: 6rem;
+}
+
+.grid-container img {
+	width: 100%;
+}
+
+.grid-2x2 {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.section-bot-restaurant {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+
+.section-bot-restaurant img {
+	width: 50%;
+}
+
+.section-bot-infos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: larger;
+}
+
+.section-bot-infos p a {
+	color: black;
 }
 
 /* Formulaires
