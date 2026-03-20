@@ -203,6 +203,33 @@ form span {
 	font-weight: bold;
 }
 
+fieldset {
+	border-radius: 3rem;
+}
+
+fieldset fieldset {
+	border-radius: 0;
+}
+
+.formlayout {
+	display: flex;
+	padding: 4rem;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formcontent {
+	margin-top: 0.8rem;
+}
+
+form {
+	display: table;
+}
+
+form label {
+	display: table-cell;
+}
+
 
 /* Règles spécifiques aux pages
 ========================================================================== */
