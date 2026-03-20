@@ -37,9 +37,56 @@
     <main>
       <div class="container">
         <h1>Réservation</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloremque, atque beatae laborum voluptatem optio assumenda deleniti soluta mollitia maiores itaque. Provident, architecto explicabo optio blanditiis iure eligendi facilis autem nam reiciendis aspernatur fugiat cupiditate totam placeat quam ut assumenda libero. Consequuntur doloremque, voluptatum rerum nesciunt maxime eveniet beatae quos aliquam commodi veniam repudiandae, dicta repellendus illum est vero veritatis natus error reiciendis. Totam, quibusdam nulla, hic, qui corrupti aspernatur voluptas officia facilis assumenda iste accusamus? Excepturi tenetur, beatae facere, aperiam debitis, illo impedit voluptatibus provident dolore in non quae tempora. Odit repudiandae, minima cum provident ratione est nisi unde eius iusto commodi veritatis magnam fugiat accusamus tempora non doloremque maiores eos ab a praesentium? Perferendis odit beatae dolores ullam alias quae nesciunt a reiciendis vitae! Ipsum asperiores laborum odit officiis facere recusandae, modi sit ducimus impedit, saepe corporis natus, ipsa eveniet similique sunt vero doloremque veritatis. Officia suscipit sequi tempora voluptas, est omnis unde earum excepturi corrupti officiis illo neque facere harum qui explicabo laborum doloremque nam a pariatur aut facilis iusto quasi voluptatibus enim. Architecto perspiciatis dolor necessitatibus tempora perferendis minus minima obcaecati inventore. Et fugit nisi delectus repudiandae sequi perferendis iusto saepe tempora architecto facere, at sit.
-        </p>
+        <fieldset>
+          <form id="frm-reservation">
+            <label for="text-nom-complet">Prénom : <span>*</span></label>
+            <input type="text" id="text-nom-complet" name="text-nom-complet" required>
+
+            <label for="text-nom-complet">Nom : <span>*</span></label>
+            <input type="text" id="text-nom-complet" name="text-nom-complet" required>
+
+            <label for="txt-phonenum">Numéro de téléphone : <span>*</span></label>
+            <input type="text" id="txt-phonenum" name="txt-phonenum" placeholder="(123) 456-7890" required>
+
+            <label for="num-numofperson">Nombre de personnes présentes pour la réservation (Maximum 8): <span>*</span></label>
+            <input type="number" id="num-numofperson" name="num-numofperson" value="1" min="1" max="8" required>
+
+            <label for="date-reservation">Date de la réservation : <span>*</span></label>
+            <input type="date" id="date-reservation" name="date-reservation" required>
+
+            <fieldset>
+              <legend>Type de réservation, parmis les 2 choix suivants : <span>*</span></legend>
+              <div>
+                <input type="radio" name="rdo-reservation" id="reservation-sam" value="sam" checked>
+                <label for="reservation-sam">Salle à manger<label>
+              </div>
+              <div>
+                <input type="radio" name="rdo-reservation" id="reservation-ter" value="ter">
+                <label for="reservation-ter">Terrasse<label>
+              </div>
+            </fieldset>
+
+            <label for="sel-reservation">Sélectionner l'heure de la réservation, parmis les choix suivants : <span>*</span></label>
+            <select id="sel-logement" name="sel-logement" required>
+              <option value="" selected>-- Sélection --</option>
+              <option value="12:00">12:00</option>
+              <option value="12:30">12:30</option>
+              <option value="13:00">13:00</option>
+              <option value="13:30">13:30</option>
+              <option value="17:00">17:00</option>
+              <option value="17:30">17:30</option>
+              <option value="18:00">18:00</option>
+              <option value="18:30">18:30</option>
+              <option value="19:00">19:00</option>
+              <option value="19:30">19:30</option>
+              <option value="20:00">20:00</option>
+              <option value="20:30">20:30</option>
+              <option value="21:00">21:00</option>
+            </select>
+        </fieldset>
+
+          <input type="submit" value="Réserver maintenant">
+        </form>
       </div>
     </main>
 
