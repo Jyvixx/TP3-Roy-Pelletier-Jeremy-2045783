@@ -38,32 +38,45 @@
       <div class="container">
         <h1>Réservation</h1>
         <fieldset class="formlayout">
-          <form id="frm-reservation">
-            <div class="formcontent">
-              <label for="text-nom-complet">Prénom : <span>*</span></label>
-              <input type="text" id="text-nom-complet" name="text-nom-complet" required>
+          <div class="formformat">
+            <form id="frm-reservation" action="confirmation.html">
+              <div class="formcontent">
+                <label for="text-nom">Votre nom <span>*</span></label>
+                <input type="text" id="text-nom" name="text-nom" required>
+              </div>
+
+              <div class="formcontent">
+                <label for="text-prenom">Votre prénom <span>*</span></label>
+                <input type="text" id="text-prenom" name="text-prenom" required>
+              </div>
+
+              <div class="formcontent">
+                <label for="txt-phonenum">Numéro de téléphone : <span>*</span></label>
+                <input type="text" id="txt-phonenum" name="txt-phonenum" placeholder="(123) 456-7890" required>
+              </div>
+
+              <div class="formcontent">
+                <label for="email-client">Votre courriel</label>
+                  <input
+                    type="email"
+                    id="email-client"
+                    name="email-client"
+                    placeholder="xyz@exemple.com"
+                  />
+              </div>
+
+              <div class="formcontent">
+                <label for="num-numofperson">Nombre de personnes présentes pour la réservation (Maximum 8): <span>*</span></label>
+                <input type="number" id="num-numofperson" name="num-numofperson" value="1" min="1" max="8" required>
+              </div>
+              
+              <div class="formcontent">
+                <label for="date-reservation">Date de la réservation : <span>*</span></label>
+                <input type="date" id="date-reservation" name="date-reservation" required>
+              </div>
             </div>
 
-            <div class="formcontent">
-              <label for="text-nom-complet">Nom : <span>*</span></label>
-              <input type="text" id="text-nom-complet" name="text-nom-complet" required>
-            </div>
-
-            <div class="formcontent">
-              <label for="txt-phonenum">Numéro de téléphone : <span>*</span></label>
-              <input type="text" id="txt-phonenum" name="txt-phonenum" placeholder="(123) 456-7890" required>
-            </div>
-
-            <div class="formcontent">
-              <label for="num-numofperson">Nombre de personnes présentes pour la réservation (Maximum 8): <span>*</span></label>
-              <input type="number" id="num-numofperson" name="num-numofperson" value="1" min="1" max="8" required>
-            </div>
             
-            <div class="formcontent">
-              <label for="date-reservation">Date de la réservation : <span>*</span></label>
-              <input type="date" id="date-reservation" name="date-reservation" required>
-            </div>
-
             <fieldset class="formcontent">
               <legend>Type de réservation, parmis les 2 choix suivants : <span>*</span></legend>
               <div>
@@ -95,33 +108,19 @@
                 <option value="21:00">21:00</option>
             </select>
             </div>
-        </fieldset>
 
-        <br>
-        
-        <fieldset class="formlayout">
           <div class="formcontent">
             <legend>Commentaires :</legend>
             <textarea name="txt-commentaire" id="txt-commentaire"></textarea>
           </div>
 
           <div class="formcontent">
-            <label for="email-client">Votre email :</label>
-                  <input
-                    type="email"
-                    id="email-client"
-                    name="email-client"
-                    placeholder="xyz@exemple.com"
-                  />
-          </div>
-
-          <div class="formcontent">
             <input type="checkbox" id="infolettre" name="infolettre" />
             <label for="infolettre">Je veux recevoir des infolettres</label>
           </div>
-        </fieldset>
 
-          <input type="submit" value="Réserver maintenant">
+          <input class="btnsubmit" type="submit" value="Réserver maintenant">
+        </fieldset>
         </form>
       </div>
     </main>
