@@ -113,6 +113,11 @@ h1 {
 	margin-bottom: 3rem;
 }
 
+footer div a:hover {
+	border-radius: 1rem;
+	background-color: #35292c6e;
+}
+
 /* Page d'accueil */
 
 .section-top-group {
@@ -241,6 +246,98 @@ h1 {
 
 .section-bot-infos p a {
 	color: black;
+}
+
+/* Page ma commande */
+
+.orderformat {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.section-details {
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem 1.5rem 2rem 1.5rem;
+	color: #DFAE65;
+	background-color: #414E8D;
+	width: 23%;
+	height: 40%;
+}
+
+.section-details hr {
+	border: 0.1rem solid #DFAE65;
+	width: 100%;
+}
+
+.section-details div p:first-child {
+	font-weight: bold;
+}
+
+.section-details div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button-order2 {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: #DFAE65;
+	background-color: #72585E;
+	padding: 0.6rem;
+	border-radius: 1.5rem;
+}
+
+.button-order2:hover {
+	color: white;
+	box-shadow: 0.2rem 0.2rem #35292c6e;
+}
+
+.tableformat {
+	width: 73%;
+	margin-right: 6rem;
+}
+
+.tableformat h3 {
+	margin-top: 2rem;
+}
+
+.tableformat div h3 {
+	margin-top: 5rem;
+}
+
+.tables {
+	width: 100%;
+	color: #DFAE65;
+}
+
+.tables th,
+td {
+	width: 100%;
+}
+
+.tables tr {
+	text-align: center;
+	display: flex;
+}
+
+.tables tr th:first-child,
+td:first-child {
+	text-align: start;
+}
+
+.rowdark {
+	background-color: #414E8D;
+	padding: 1rem;
+	border-radius: 3rem;
+}
+
+.rowlight {
+	background-color: #5969bd;
+	padding: 1rem;
+	border-radius: 3rem;
 }
 
 /* Formulaires
