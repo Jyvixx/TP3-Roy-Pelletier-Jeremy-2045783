@@ -24,6 +24,26 @@ h2 {
 	font-family: "Great Vibes", cursive;
 }
 
+.list-breakpoint {
+	display: none;
+}
+
+.list-breakpoint2 {
+	display: none;
+}
+
+.socialsbreakpoint {
+	display: none;
+}
+
+.mapbreakpoint {
+	display: none;
+}
+
+.logobreakpoint {
+	display: none;
+}
+
 /* Mise en page (positionnement)
 ========================================================================== */
 
@@ -233,10 +253,6 @@ footer div a:hover {
 	margin-bottom: 3rem;
 }
 
-.section-bot-restaurant img {
-	width: 50%;
-}
-
 .section-bot-infos {
 	display: flex;
 	flex-direction: column;
@@ -421,5 +437,130 @@ input::placeholder {
 	box-shadow: 0.3rem 0.3rem #232a4d63;
 }
 
-/* Règles spécifiques aux pages
+/* Media queries
 ========================================================================== */
+
+@media screen and (max-width: 1200px) {
+	header nav a {
+		font-size: large;
+	}
+
+	body {
+		font-size: small;
+	}
+
+	.section-bot-infos {
+		margin-right: 10rem;
+	}
+
+	.map iframe {
+		width: 50rem;
+	}
+
+}
+
+@media screen and (max-width: 960px) {
+	nav {
+		display: none !important;
+	}
+
+	.list-breakpoint {
+		display: block;
+	}
+
+	.socials a {
+		display: none;
+	}
+
+	.socialsbreakpoint {
+		display: block;
+	}
+
+	.cards-clients {
+		width: 45%;
+	}
+
+	.section-top-button {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.button-booking {
+		margin-top: 0.5rem;
+	}
+
+	.section-bot-restaurant {
+		display: flex;
+	}
+
+	.map iframe {
+		display: none;
+	}
+
+	.mapbreakpoint {
+		display: block;
+	}
+
+	.section-bot-infos {
+		font-size: small;
+	}
+
+}
+
+@media screen and (max-width: 570px) {
+
+	body {
+		font-size: x-small;
+	}
+
+	.list-breakpoint {
+		display: none;
+	}
+
+	.list-breakpoint2 {
+		display: block;
+	}
+
+	.cards-clients {
+		width: 80%;
+	}
+
+	.card-group p {
+		font-size: x-small;
+	}
+
+	.card-img {
+		height: 3rem;
+		width: 3rem;
+	}
+
+	.section-bot-restaurant {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	tr {
+		font-size: xx-small;
+	}
+
+	.section-details div p {
+		font-size: xx-small;
+	}
+
+	.logo a:first-child {
+		display: none;
+	}
+
+	.logobreakpoint {
+		display: block;
+	}
+
+	.btnsubmit {
+		font-size: x-small;
+		padding: 0.8rem;
+	}
+
+
+}

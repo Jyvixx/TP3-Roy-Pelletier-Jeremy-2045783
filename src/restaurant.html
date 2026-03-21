@@ -9,7 +9,7 @@
 
     <meta name="description" content="Informations et visuel sur L'Orléans" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -19,17 +19,28 @@
     <header>
       <div class="container flex-header">
         <div class="logo">
-          <a href="index.html"
+          <a class="logoprincipal" href="index.html"
             ><img src="img/L'Orléans.png" alt="Restaurant L'Orléans"
+          /></a>
+          <a class="logobreakpoint" href="index.html"
+            ><img src="img/L'Orléans32px.png" alt="Restaurant L'Orléans"
           /></a>
         </div>
 
         <nav>
-          <a href="index.html">Accueil</a>
-          <a href="réservation.html">Réservation</a>
+          <a class="currentpage" href="index.html">Accueil</a>
+          <a class="currentpage" href="réservation.html">Réservation</a>
           <a class="currentpage" href="restaurant.html">Restaurant</a>
-          <a href="ma_commande.html">Ma commande</a>
+          <a class="currentpage" href="ma_commande.html">Ma commande</a>
         </nav>
+
+        <a class="list-breakpoint"
+          ><img src="img/list.png" alt="Icône de liste"
+        /></a>
+
+        <a class="list-breakpoint2"
+          ><img src="img/List32px.png" alt="Icône de liste"
+        /></a>
       </div>
     </header>
 
@@ -38,16 +49,22 @@
         <section>
           <h1>Restaurant</h1>
           <div class="grid-container">
-              <img src="img/drink.png" alt="Une boisson">
-              <img src="img/indian-food.png" alt="Un plat indien">
-              <div class="grid-2x2">
-                <img src="img/terrasse.png" alt="Notre terrasse">
-              </div>
-              <div class="grid-2x2">
-                <img src="img/service-client.png" alt="Un serveur et des clients">
-              </div>
-              <img src="img/pizza.png" alt="Une pizza">
-              <img src="img/oyster.png" alt="Un plat avec des huitres et des pâtes">
+            <img src="img/drink.png" alt="Une boisson" />
+            <img src="img/indian-food.png" alt="Un plat indien" />
+            <div class="grid-2x2">
+              <img src="img/terrasse.png" alt="Notre terrasse" />
+            </div>
+            <div class="grid-2x2">
+              <img
+                src="img/service-client.png"
+                alt="Un serveur et des clients"
+              />
+            </div>
+            <img src="img/pizza.png" alt="Une pizza" />
+            <img
+              src="img/oyster.png"
+              alt="Un plat avec des huitres et des pâtes"
+            />
           </div>
         </section>
         <section>
@@ -55,9 +72,7 @@
             <div class="section-bot-infos">
               <div>
                 <h2>Addresse</h2>
-                <p>3914 Rue Masson, 
-                  <br>Montréal, QC 
-                  <br>H1X 1T1</p>
+                <p>3914 Rue Masson, <br />Montréal, QC <br />H1X 1T1</p>
               </div>
               <div>
                 <h2>Téléphone</h2>
@@ -69,7 +84,28 @@
               </div>
             </div>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d698.4182770149848!2d-73.5694791!3d45.5569011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91c011d246a67%3A0x10c4607e526721ff!2sCPE%20du%20Montr%C3%A9al%20M%C3%A9tropolitain!5e0!3m2!1sfr!2sca!4v1773885461957!5m2!1sfr!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d698.4182770149848!2d-73.5694791!3d45.5569011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91c011d246a67%3A0x10c4607e526721ff!2sCPE%20du%20Montr%C3%A9al%20M%C3%A9tropolitain!5e0!3m2!1sfr!2sca!4v1773885461957!5m2!1sfr!2sca"
+                width="800"
+                height="600"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="mapbreakpoint">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d698.4182770149848!2d-73.5694791!3d45.5569011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91c011d246a67%3A0x10c4607e526721ff!2sCPE%20du%20Montr%C3%A9al%20M%C3%A9tropolitain!5e0!3m2!1sfr!2sca!4v1774056598424!5m2!1sfr!2sca"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </section>
       </div>
@@ -77,25 +113,31 @@
 
     <footer>
       <div class="container footer-top">
-          <div>✉ Réalisé par : Jérémy Roy-Pelletier</div>
+        <div>✉ Réalisé par : Jérémy Roy-Pelletier</div>
 
-          <div>
-            Réseaux sociaux :
-            <a href="#"><img src="img/Facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="img/Linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="img/Twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="img/Instagram.png" alt="Instagram"></a>
-          </div>
+        <div class="socials">
+          Réseaux sociaux :
+          <a href="#"><img src="img/Facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="img/Linkedin.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="img/Twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="img/Instagram.png" alt="Instagram" /></a>
         </div>
+        <div class="socialsbreakpoint">
+          Réseaux sociaux :
+          <a href="#"><img src="img/Facebook16px.png" alt="Facebook" /></a>
+          <a href="#"><img src="img/Linkedin16px.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="img/Twitter16px.png" alt="Twitter" /></a>
+          <a href="#"><img src="img/Instagram16px.png" alt="Instagram" /></a>
+        </div>
+      </div>
 
-        <hr class="container"/>
+      <hr class="container" />
 
-        <div class="container footer-bottom">
-          Intégration web 1
-          <div class="footer-bottom-right">
-            <div>Cégep de Trois-Rivières</div>
-            <div>Hiver 2026</div>
-          </div>
+      <div class="container footer-bottom">
+        Intégration web 1
+        <div class="footer-bottom-right">
+          <div>Cégep de Trois-Rivières</div>
+          <div>Hiver 2026</div>
         </div>
       </div>
     </footer>
